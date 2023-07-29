@@ -12,7 +12,7 @@ terraform {
   backend "s3" {
     bucket = "ryan5100"
     key    = "dev/eks-cluster/terraform.tfstate"
-    region = "us-east-1" 
+    region = "ap-northeast-2" 
  
     # For State Locking
     dynamodb_table = "dev-ekscluster"    
