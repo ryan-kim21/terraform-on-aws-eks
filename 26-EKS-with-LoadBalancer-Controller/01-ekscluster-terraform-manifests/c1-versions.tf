@@ -8,9 +8,9 @@ terraform {
       version = ">= 4.65"
      }
   }
-  # Adding Backend as S3 for Remote State Storage
+  Adding Backend as S3 for Remote State Storage
   backend "s3" {
-    bucket = "terraform-on-aws-eks"
+    bucket = "ryan5100"
     key    = "dev/eks-cluster/terraform.tfstate"
     region = "us-east-1" 
  
