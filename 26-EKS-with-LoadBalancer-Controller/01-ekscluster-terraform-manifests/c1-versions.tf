@@ -15,7 +15,7 @@ terraform {
     region = "ap-northeast-2" 
  
     # For State Locking
-    dynamodb_table = "dev-ekscluster"    
+    # dynamodb_table = "dev-ekscluster"    
   }  
 }
 

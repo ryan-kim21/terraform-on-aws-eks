@@ -4,24 +4,25 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      #version = "~> 4.12"
+      #version = "~> 4.14"
       version = ">= 4.65"
      }
     helm = {
       source = "hashicorp/helm"
       #version = "2.5.1"
       #version = "~> 2.5"
-      version = "~> 2.9"
+      version = ">= 2.9.0"
     }
     http = {
       source = "hashicorp/http"
       #version = "2.1.0"
       #version = "~> 2.1"
-      version = "~> 3.3"
+      version = ">= 3.3.0"
     }
     kubernetes = {
       source = "hashicorp/kubernetes"
-      version = "~> 2.20"
+      #version = "~> 2.11"
+      version = ">= 2.20"
     }      
   }
   # Adding Backend as S3 for Remote State Storage
@@ -31,8 +32,8 @@ terraform {
     region = "ap-northeast-2" 
 
     # For State Locking
-    dynamodb_table = "dev-aws-lbc"    
-  }     
+    # dynamodb_table = "dev-aws-lbc"    
+  }         
 }
 
 # Terraform AWS Provider Block
