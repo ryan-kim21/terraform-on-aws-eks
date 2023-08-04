@@ -23,7 +23,7 @@ terraform {
   # Adding Backend as S3 for Remote State Storage
   backend "s3" {
     bucket = "ryan5100"
-    key    = "dev/aws-lbc/terraform.tfstate"
+    key    = "dev/aws-ebs-csi/terraform.tfstate"
     region = "ap-northeast-2" 
 
     # For State Locking

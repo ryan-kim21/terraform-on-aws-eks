@@ -3,7 +3,7 @@ data "terraform_remote_state" "eks" {
   backend = "s3"
   config = {
     bucket = "ryan5100"
-    key    = "dev/eks-cluster/terraform.tfstate"
+    key    = "dev/auto-scale/terraform.tfstate"
     region = var.aws_region
   }
 }
