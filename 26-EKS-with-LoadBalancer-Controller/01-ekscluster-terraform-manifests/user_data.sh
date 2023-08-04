@@ -29,3 +29,5 @@ complete -o default -F __start_kubectl k
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
+
+aws eks --region ap-northeast-2 update-kubeconfig --name hr-dev-eksdemo1
